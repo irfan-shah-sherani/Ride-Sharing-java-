@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+
+    <!-- City Labels -->
+    <Label layoutX="62.0" layoutY="20.0" text="Lahore" />
+    <Label layoutX="455.0" layoutY="166.0" text="Pindi" />
+    <Label layoutX="253.0" layoutY="114.0" text="DI Khan" />
+    <Label layoutX="62.0" layoutY="114.0" text="Quetta" />
+    <Label layoutX="439.0" layoutY="28.0" text="Peshawar" />
+    <Label layoutX="256.0" layoutY="28.0" text="Islamabad" />
+    <Label layoutX="244.0" layoutY="282.0" text="Faisalabad" />
+    <Label layoutX="46.0" layoutY="282.0" text="Muzafarabad" />
+    <Label layoutX="454.0" layoutY="282.0" text="Iyari" />
+
+    <!-- Edges with fx:id matching Controller -->
+    <Line fx:id="lahore_islamabad" endX="281.0" endY="58.0" startX="82.0" startY="58.0" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="islamabad_DIkhan" endX="277" endY="148" startX="278.0" startY="63.0" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="DIkhan_faislabad" endX="273" endY="264" startX="277" startY="148" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="faislabad_iyari" endX="463" endY="264" startX="273" startY="264" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="quetta_DIkhan" endX="277" endY="148" startX="82" startY="148" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="muzafarabad_faislabad" endX="273" endY="264" startX="82" startY="264.0" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="islamabad_iyari" endX="463" endY="264" startX="283" startY="62" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="peshawar_pindi" endX="473.0" endY="125.0" layoutX="-5.0" layoutY="21.0" startX="472.0" startY="39.0" stroke="BLACK" strokeWidth="2" />
+    <Line fx:id="pindi_DIkhan" endX="277" endY="148" startX="464" startY="148" stroke="BLACK" strokeWidth="2" />
+
+    <!-- City Circles -->
+    <Circle fx:id="lahoreNode" fill="DODGERBLUE" layoutX="82.0" layoutY="58.0" radius="17" stroke="BLACK" />
+    <Circle fx:id="islamabadNode" fill="DODGERBLUE" layoutX="278.0" layoutY="61.0" radius="17" stroke="BLACK" />
+    <Circle fx:id="peshawarNode" fill="DODGERBLUE" layoutX="467.0" layoutY="60.0" radius="17" stroke="BLACK" />
+    <Circle fx:id="quettaNode" fill="DODGERBLUE" layoutX="82" layoutY="148" radius="17" stroke="BLACK" />
+    <Circle fx:id="DIkhanNode" fill="DODGERBLUE" layoutX="277" layoutY="148" radius="17" stroke="BLACK" />
+    <Circle fx:id="pindiNode" fill="DODGERBLUE" layoutX="468.0" layoutY="146.0" radius="17" stroke="BLACK" />
+    <Circle fx:id="muzafarabadNode" fill="DODGERBLUE" layoutX="82.0" layoutY="264.0" radius="17" stroke="BLACK" />
+    <Circle fx:id="fiaslabadNode" fill="DODGERBLUE" layoutX="273" layoutY="264" radius="17" stroke="BLACK" />
+    <Circle fx:id="liyariNode" fill="DODGERBLUE" layoutX="463" layoutY="264" radius="17" stroke="BLACK" />
+   <Label layoutX="152.0" layoutY="-71.0" text="10km" />
+   <Label layoutX="333.0" layoutY="238.0" text="10km" />
+   <Label layoutX="389.0" layoutY="175.0" text="20km" />
+   <Label layoutX="140.0" layoutY="130.0" text="10km" />
+   <Label layoutX="144.0" layoutY="41.0" text="10km" />
+   <Label layoutX="174.0" layoutY="-107.0" text="Lahore" />
+   <Label layoutX="161.0" layoutY="-99.0" />
+   <Label layoutX="474.0" layoutY="97.0" text="5km" />
+   <Label layoutX="354.0" layoutY="130.0" text="10km" />
+   <Label layoutX="145.0" layoutY="247.0" text="10km" />
+   <Label layoutX="245.0" layoutY="198.0" text="5km" />
+   <Label layoutX="243.0" layoutY="88.0" text="5km" />
+</AnchorPane>
