@@ -1,0 +1,76 @@
+
+.root {
+    -fx-background-color: linear-gradient(to bottom right, #0f172a, #020617);
+    -fx-font-family: "Segoe UI", Arial;
+}
+
+
+.button {
+    -fx-background-radius: 50;
+    -fx-border-radius: 50;
+    -fx-font-weight: bold;
+    -fx-padding: 6 12;
+    -fx-cursor: hand;
+}
+
+
+#LahoreButton,
+#IslamabadButton,
+#PeshawarButton,
+#QuettaButton,
+#DIKhanButton,
+#PindiButton,
+#MuzaffarabadButton,
+#FaisalabadButton,
+#LyariButton {
+    -fx-background-color: #1e293b;
+    -fx-text-fill: #e5e7eb;
+    -fx-border-color: #38bdf8;
+    -fx-border-width: 2;
+    -fx-border-radius: 50;
+}
+
+#LahoreButton:hover,
+#IslamabadButton:hover,
+#PeshawarButton:hover,
+#QuettaButton:hover,
+#DIKhanButton:hover,
+#PindiButton:hover,
+#MuzaffarabadButton:hover,
+#FaisalabadButton:hover,
+#LyariButton:hover {
+    -fx-background-color: #38bdf8;
+    -fx-text-fill: #020617;
+}
+
+
+.line {
+    -fx-stroke: #94a3b8;
+    -fx-stroke-width: 2;
+}
+
+
+.shortest-road {
+    -fx-stroke: #facc15;
+    -fx-stroke-width: 4;
+}
+
+
+.label {
+    -fx-text-fill: #e5e7eb;
+    -fx-font-weight: bold;
+    -fx-font-size: 13px;
+}
+
+
+.label.distance {
+    -fx-text-fill: #38bdf8;
+    -fx-font-size: 11px;
+}
+
+
+#statusLabel {
+    -fx-text-fill: #facc15;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}

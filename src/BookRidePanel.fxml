@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" stylesheets="@BookRide.css" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BookRideForm">
+    <Label fx:id="statusLabel" />
+   <ComboBox fx:id="sourceCombo" layoutX="113.0" layoutY="112.0" prefWidth="150.0" promptText="Select Source" style="-fx-text-fill: black;"/>
+   <ComboBox fx:id="destinationCombo" layoutX="309.0" layoutY="112.0" prefWidth="150.0" promptText="Select Destination" style="-fx-text-fill: black;" />
+   <Button fx:id="confirmRideButton" layoutX="268.0" layoutY="236.0" mnemonicParsing="false" onAction="#clickConfirmRide" text="Confim Ride" />
+   <Button fx:id="chooseOnMap" layoutX="113.0" layoutY="167.0" mnemonicParsing="false" onAction="#clickChooseOnMap" text="Choose from Map" />
+   <Label layoutX="220.0" layoutY="38.0" text="Book your Ride" textAlignment="CENTER" textFill="#0955ed">
+      <font>
+         <Font name="Bodoni MT Black Italic" size="19.0" />
+      </font>
+   </Label>
+
+</AnchorPane>

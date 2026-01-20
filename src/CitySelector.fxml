@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="351.0" prefWidth="600.0" stylesheets="@CitySelector.css" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RideFormUsingMapController">
+
+        <Label layoutX="58.0" layoutY="35.0" styleClass="distance" text="0. Lahore" />
+        <Label layoutX="456.0" layoutY="182.0" styleClass="distance" text="5. Pindi" />
+        <Label layoutX="246.0" layoutY="130.0" styleClass="distance" text="4. DI Khan" />
+        <Label layoutX="63.0" layoutY="130.0" styleClass="distance" text="3. Quetta" />
+        <Label layoutX="452.0" layoutY="43.0" styleClass="distance" text="2. Peshawar" />
+        <Label layoutX="247.0" layoutY="36.0" styleClass="distance" text="1. Islamabad" />
+        <Label layoutX="245.0" layoutY="298.0" styleClass="distance" text="7. Faisalabad" />
+        <Label layoutX="47.0" layoutY="298.0" styleClass="distance" text="6. Muzafarabad" />
+        <Label layoutX="455.0" layoutY="298.0" styleClass="distance" text="8. Lyari" />
+
+        <!-- Edges with fx:id matching Controller -->
+        <Line fx:id="lahore_islamabad" endX="240.00001525878906" endY="4.666667938232422" layoutX="15.0" layoutY="61.0" startX="99.66667938232422" startY="4.666667938232422" stroke="BLACK" strokeWidth="2" styleClass="line" />
+        <Line fx:id="islamabad_DIkhan" endX="279.0000305175781" endY="136.0" layoutX="1.0" layoutY="16.0" startX="278.0" startY="63.0" stroke="BLACK" strokeWidth="2" styleClass="line" />
+        <Line fx:id="DIkhan_faislabad" endX="279.0000305175781" endY="250.00001525878906" layoutX="1.0" layoutY="16.0" startX="279.0000305175781" startY="161.33334350585938" stroke="BLACK" strokeWidth="2" styleClass="line" />
+        <Line fx:id="faislabad_iyari" endX="433.0" endY="244.66665649414062" layoutX="30.0" layoutY="34.0" startX="289.33331298828125" startY="244.66665649414062" stroke="BLACK" strokeWidth="2" styleClass="line" />
+
+         <Line endX="242.00003051757812" endY="-185.3333282470703" layoutX="230.0" layoutY="348.0" startX="82.00003051757812" startY="-183.3333282470703" strokeWidth="2.0" styleClass="line" />
+        <Line fx:id="quetta_DIkhan" endX="210.00001525878906" endY="99.66667175292969" layoutX="44.0" layoutY="65.0" startX="70.99999237060547" startY="98.66667175292969" stroke="BLACK" strokeWidth="2" styleClass="line" />
+        <Line fx:id="muzafarabad_faislabad" endX="253.00001525878906" endY="262.6666564941406" layoutX="1.0" layoutY="16.0" startX="112.33334350585938" startY="260.6666564941406" stroke="BLACK" strokeWidth="2" styleClass="line" />
+        <Line fx:id="islamabad_iyari" endX="488.0000305175781" endY="250.00001525878906" layoutX="1.0" layoutY="16.0" startX="283" startY="62" stroke="BLACK" strokeWidth="2" styleClass="line" />
+        <Line fx:id="peshawar_pindi" endX="397.4142761230469" endY="103.0" layoutX="93.0" layoutY="47.0" startX="397.4142761230469" startY="40.333335876464844" stroke="BLACK" strokeWidth="2" styleClass="line" />
+
+        <Label layoutX="153.0" layoutY="-55.0" text="10km" />
+        <Label layoutX="334.0" layoutY="254.0" text="1km" />
+        <Label layoutX="357.0" layoutY="190.0" text="20km" />
+        <Label layoutX="141.0" layoutY="146.0" text="10km" />
+        <Label layoutX="153.0" layoutY="44.0" text="10km" />
+        <Label layoutX="175.0" layoutY="-91.0" text="Lahore" />
+        <Label layoutX="495.0" layoutY="113.0" text="5km" />
+        <Label layoutX="380.0" layoutY="146.0" text="10km" />
+        <Label layoutX="146.0" layoutY="263.0" text="10km" />
+        <Label layoutX="246.0" layoutY="214.0" text="1km" />
+        <Label layoutX="257.0" layoutY="95.0" text="5km" />
+
+   <Button fx:id="LahoreButton" layoutX="62.0" layoutY="53.0" mnemonicParsing="false" onAction="#citySelected" text="Lahore" />
+   <Button fx:id="IslamabadButton" layoutX="255.0" layoutY="53.0" mnemonicParsing="false" onAction="#citySelected" text="Islamabad" />
+   <Button fx:id="PeshawarButton" layoutX="450.0" layoutY="62.0" mnemonicParsing="false" onAction="#citySelected" text="Peshawar" />
+   <Button fx:id="QuettaButton" layoutX="63.0" layoutY="151.0" mnemonicParsing="false" onAction="#citySelected" text="Quetta" />
+   <Button fx:id="DIKhanButton" layoutX="254.0" layoutY="152.0" mnemonicParsing="false" onAction="#citySelected" text="DI Khan" />
+   <Button fx:id="PindiButton" layoutX="472.0" layoutY="150.0" mnemonicParsing="false" onAction="#citySelected" text="Pindi" />
+   <Button fx:id="MuzaffarabadButton" layoutX="24.0" layoutY="264.0" mnemonicParsing="false" onAction="#citySelected" text="Muzaffarabad" />
+   <Button fx:id="FaisalabadButton" layoutX="254.0" layoutY="266.0" mnemonicParsing="false" onAction="#citySelected" text="Faislabad" />
+   <Button fx:id="LyariButton" layoutX="463.0" layoutY="266.0" mnemonicParsing="false" onAction="#citySelected" text="Lyari" />
+
+   <Label fx:id="statusLabel" layoutX="185.0" layoutY="365.0" />
+
+
+
+</AnchorPane>
